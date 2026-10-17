@@ -1,0 +1,24 @@
+[project]
+name = "grimorio"
+version = "2.0.0"
+description = "Grimório V2.0 - Dark Fantasy RPG & Crônicas do Reino"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "flet>=1.0.0",
+    "pillow>=9.0.0"
+]
+
+[tool.flet]
+org = "com.grimorio"
+product = "v2"
+company = "Grimorio Studio"
+copyright = "Copyright (c) 2026 Grimorio"
+
+[tool.flet.app]
+path = "."
+
+[tool.flet.android]
+package = "com.grimorio.v2"
+icon = "assets/logo.png"
+splash_color = "#121214"
