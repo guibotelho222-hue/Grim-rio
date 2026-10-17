@@ -26,12 +26,12 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.22.x'
+          flutter-version: '3.44.8'
           channel: 'stable'
 
       - name: Build Android APK with Flet
         run: |
-          flet build apk --product "Grimório" --project "grimorio" --verbose
+          yes | flet build apk --product "Grimório" --project "grimorio" --verbose
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
